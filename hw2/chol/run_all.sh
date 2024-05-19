@@ -3,7 +3,7 @@
 function run_all() {
     arr=("$@")
     for i in "${arr[@]}"; do
-        version="LU_decompose_${i}"
+        version="chol_${i}"
         make run VERSION="$version"
     done
 }
