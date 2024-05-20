@@ -7,7 +7,7 @@
 #include <float.h>
 
 #define IDX(i, j, n) (((j)+ (i)*(n)))
-#define BLKSIZE 8 //OPT2
+#define BLKSIZE 16 //OPT2
 
 
 static double gtod_ref_time_sec = 0.0;
