@@ -38,7 +38,7 @@ int chol(double *A, unsigned int n){
     register double tmp;
     register __m256d tmp0, tmp1, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7; // OPT 3
 
-f   for (j = 0; j < n; j++) {
+    for (j = 0; j < n; j++) {
         for (i = j; i < n; i++) {
             tmp = A[IDX(i, j, n)];
             for (k = 0; k < j; ) {
